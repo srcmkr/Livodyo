@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "SJqQYeBlwltdTUE3QRGC5aSfWYAGfijz+u7//YazJGSfA6WophUl9ntGnLrGsd4nTEKq7XGaD6uFOM9i+JdREQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sourcemaker\\source\\repos\\Livodyo\\Livodyo\\Livodyo.iOS\\Livodyo.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\xamarin.essentials\\1.6.0-pre3\\xamarin.essentials.1.6.0-pre3.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\xamarin.forms\\5.0.0.1558-pre3\\xamarin.forms.5.0.0.1558-pre3.nupkg.sha512"
+  ],
+  "logs": []
+}

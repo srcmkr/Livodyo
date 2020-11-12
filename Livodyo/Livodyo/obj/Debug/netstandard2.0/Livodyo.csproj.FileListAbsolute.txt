@@ -1,0 +1,14 @@
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\bin\Debug\netstandard2.0\Livodyo.deps.json
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\bin\Debug\netstandard2.0\Livodyo.dll
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\bin\Debug\netstandard2.0\ref\Livodyo.dll
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\bin\Debug\netstandard2.0\Livodyo.pdb
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\Livodyo.AssemblyInfoInputs.cache
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\Livodyo.AssemblyInfo.cs
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\Livodyo.csproj.CoreCompileInputs.cache
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\Livodyo.dll
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\ref\Livodyo.dll
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\Livodyo.pdb
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\Livodyo.csprojAssemblyReference.cache

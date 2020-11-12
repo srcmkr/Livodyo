@@ -1,0 +1,111 @@
+﻿@model MovielistViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-5">
+        <form asp-action="CreateTag">
+            <div class="form-group">
+                <div class="form-group">
+                    <input asp-for="NewTag.Tag" placeholder="Tag XYZ"/> <input type="submit" value="Tag erstellen"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-5">
+        <form asp-action="CreateAuthor">
+            <div class="form-group">
+                <div class="form-group">
+                    <input asp-for="NewAuthor.Name" placeholder="Name des Autors"/> <input type="submit" value="Autor erstellen"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    @foreach (var tag in Model.Tags)
+    {
+        <div class="m-2 badge badge-info">@tag.Tag</div>
+    }
+</div>
+
+<div class="row">
+    @foreach (var author in Model.Authors)
+    {
+        <div class="m-2 badge badge-info">@author.Name</div>
+    }
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            @foreach (var audiobook in Model.AudioBooks)
+            {
+            <div class="col-md-4 p-4 border-dark">
+                <small>@audiobook.Id</small><br />
+                <a href="https://www.youtube.com/watch?v=@audiobook.YoutubeId">
+                    <img height="25%" src="https://img.youtube.com/vi/@audiobook.YoutubeId/0.jpg"/>
+                </a><br />
+                <strong>@audiobook.Title</strong><br/>
+                @Model.Authors.SingleOrDefault(c => c.Id == audiobook.AuthorId)?.Name<br/>
+                @foreach (var tagId in audiobook.Tags)
+                {
+                    <div class="m-2">@Model.Tags.SingleOrDefault(c => c.Id == tagId)?.Tag</div>
+                }
+                <a href="@audiobook.AmazonLink">Amazon</a><br />
+                @audiobook.PublicationDate.ToShortDateString()<br />
+                @audiobook.Language<br />
+                <a asp-action="DeleteAudioBook" asp-route-audiobookId="@audiobook.Id">[ Delete ]</a>
+                <hr />
+            </div>
+                
+            }
+        </div>
+    </div>
+    <div class="col-md-4">
+        <form asp-action="CreateAudioBook">
+            <div class="form-group">
+                <label>Titel</label>
+                <input asp-for="NewAudioBook.Title" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Veröffentlichungsdatum</label>
+                <input asp-for="NewAudioBook.PublicationDate" class="form-control" type="date" />
+            </div>
+            <div class="form-group">
+                <label>Sprache</label>
+                <input asp-for="NewAudioBook.Language" value="German" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Autor</label>
+                <select asp-for="NewAudioBook.AuthorId" class="form-control" >
+                    @foreach (var author in Model.Authors)
+                    {
+                        <option value="@author.Id">@author.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Youtube-ID</label>
+                <input asp-for="NewAudioBook.YoutubeId" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Link auf Amazon</label>
+                <input asp-for="NewAudioBook.AmazonLink" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Tags / Kategorien</label>
+                <select asp-for="NewAudioBook. Tags" multiple="multiple" class="form-control" >
+                    @foreach (var tag in Model.Tags)
+                    {
+                        <option value="@tag.Id">@tag.Tag</option>
+                    }
+                </select>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Erstellen" />
+        </form>
+    </div>
+</div>
