@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "AngleSharp/0.14.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AngleSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AngleSharp.dll": {}
+        }
+      },
+      "LibVLCSharp/3.4.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/LibVLCSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/LibVLCSharp.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -283,7 +304,7 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "Xamarin.Essentials/1.6.0-pre3": {
+      "Xamarin.Essentials/1.6.0-pre4": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -295,7 +316,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.1558-pre3": {
+      "Xamarin.Forms/5.0.0.1709-pre4": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -312,13 +333,27 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "YoutubeExplode/5.1.8": {
+        "type": "package",
+        "dependencies": {
+          "AngleSharp": "0.14.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/YoutubeExplode.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/YoutubeExplode.dll": {}
+        }
+      },
       "Livodyo/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LibVLCSharp": "3.4.9",
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.6.0-pre3",
-          "Xamarin.Forms": "5.0.0.1558-pre3"
+          "Xamarin.Essentials": "1.6.0-pre4",
+          "Xamarin.Forms": "5.0.0.1709-pre4",
+          "YoutubeExplode": "5.1.8"
         },
         "compile": {
           "bin/placeholder/Livodyo.dll": {}
@@ -330,6 +365,66 @@
     }
   },
   "libraries": {
+    "AngleSharp/0.14.0": {
+      "sha512": "34w9I7nyszfEYBY8g7T3B0AtWlOivNh+QoWc3KECRwbmcNyqWmb4huihtmpH2Ds7rIRRHMMPv9yfPBxxjBn03g==",
+      "type": "package",
+      "path": "anglesharp/0.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "anglesharp.0.14.0.nupkg.sha512",
+        "anglesharp.nuspec",
+        "lib/net46/AngleSharp.dll",
+        "lib/net46/AngleSharp.xml",
+        "lib/net461/AngleSharp.dll",
+        "lib/net461/AngleSharp.xml",
+        "lib/net472/AngleSharp.dll",
+        "lib/net472/AngleSharp.xml",
+        "lib/netstandard1.3/AngleSharp.dll",
+        "lib/netstandard1.3/AngleSharp.xml",
+        "lib/netstandard2.0/AngleSharp.dll",
+        "lib/netstandard2.0/AngleSharp.xml"
+      ]
+    },
+    "LibVLCSharp/3.4.9": {
+      "sha512": "hfivX2fKk2AKaKOkqeTBlqNL6YKJAFK4AwoQPJkhArDch2cg194nhuy6esWUFs7N/xTY/z1sbdy35lceCAetbg==",
+      "type": "package",
+      "path": "libvlcsharp/3.4.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/monoandroid81/LibVLCSharp.Android.AWindow.dll",
+        "lib/monoandroid81/LibVLCSharp.dll",
+        "lib/monoandroid81/LibVLCSharp.xml",
+        "lib/net40/LibVLCSharp.dll",
+        "lib/net40/LibVLCSharp.xml",
+        "lib/net471/LibVLCSharp.dll",
+        "lib/net471/LibVLCSharp.xml",
+        "lib/netstandard1.1/LibVLCSharp.dll",
+        "lib/netstandard1.1/LibVLCSharp.xml",
+        "lib/netstandard2.0/LibVLCSharp.dll",
+        "lib/netstandard2.0/LibVLCSharp.xml",
+        "lib/netstandard2.1/LibVLCSharp.dll",
+        "lib/netstandard2.1/LibVLCSharp.xml",
+        "lib/uap10.0.16299/LibVLCSharp.dll",
+        "lib/uap10.0.16299/LibVLCSharp.pri",
+        "lib/uap10.0.16299/LibVLCSharp.xml",
+        "lib/uap10.0.16299/LibVLCSharp/LibVLCSharp.xr.xml",
+        "lib/uap10.0/LibVLCSharp.dll",
+        "lib/uap10.0/LibVLCSharp.pri",
+        "lib/uap10.0/LibVLCSharp.xml",
+        "lib/uap10.0/LibVLCSharp/LibVLCSharp.xr.xml",
+        "lib/xamarinios10/LibVLCSharp.dll",
+        "lib/xamarinios10/LibVLCSharp.xml",
+        "lib/xamarinmac20/LibVLCSharp.dll",
+        "lib/xamarinmac20/LibVLCSharp.xml",
+        "lib/xamarintvos10/LibVLCSharp.dll",
+        "lib/xamarintvos10/LibVLCSharp.xml",
+        "libvlcsharp.3.4.9.nupkg.sha512",
+        "libvlcsharp.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.0": {
       "sha512": "+vVXw0oVVu5dnwseBxZFVeYZ0qPJTI03DTdghRKrcK+QhTM3Nu8orukKqdYObsI4mWZADE8wTILuYR5CowJr+w==",
       "type": "package",
@@ -927,10 +1022,10 @@
         "version.txt"
       ]
     },
-    "Xamarin.Essentials/1.6.0-pre3": {
-      "sha512": "1ivhLILsK5Nm4hqGEFyTXBxgwdG0QGnvWpINS2tdicYWWi3hFCgmVSqak3EfEtzzz+dETEPiDdsMPiwU9F/tyg==",
+    "Xamarin.Essentials/1.6.0-pre4": {
+      "sha512": "I8aI9wUOsKKMgeeRUX2wT4PBX74ozBLseC/s+o/w2QXGf+T5OjYI47ZESGZD39zWwqVF2ASGlwrYN4lV2UALzQ==",
       "type": "package",
-      "path": "xamarin.essentials/1.6.0-pre3",
+      "path": "xamarin.essentials/1.6.0-pre4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -974,14 +1069,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.6.0-pre3.nupkg.sha512",
+        "xamarin.essentials.1.6.0-pre4.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.1558-pre3": {
-      "sha512": "fSya3s/aslIi71GzT5+AyJ1WAVPgXdbF76/5q2pUl+e8VdZc7cqaO+/Hf6Xm9VlPBG5npf8tLkSspNnFwN54+g==",
+    "Xamarin.Forms/5.0.0.1709-pre4": {
+      "sha512": "4dIJ7Vs0SJl92vglE2/UkCL5FDDMYPx7ezyfz/3xUqZmNbzz74cpKeEcuy7eW43u/nfDxEX+nyxRwL4+dzHmQg==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.1558-pre3",
+      "path": "xamarin.forms/5.0.0.1709-pre4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1190,8 +1285,28 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.1558-pre3.nupkg.sha512",
+        "xamarin.forms.5.0.0.1709-pre4.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "YoutubeExplode/5.1.8": {
+      "sha512": "1g7ruwKLaUJCoJ/zl731rybVfR+FrPohNNYG+YTZtBymBihDp4KpAHCRt8PXnXIJAGb+yBwJG1wZMsxCbbvG9g==",
+      "type": "package",
+      "path": "youtubeexplode/5.1.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "favicon.png",
+        "lib/net461/YoutubeExplode.dll",
+        "lib/net461/YoutubeExplode.xml",
+        "lib/netcoreapp3.0/YoutubeExplode.dll",
+        "lib/netcoreapp3.0/YoutubeExplode.xml",
+        "lib/netstandard2.0/YoutubeExplode.dll",
+        "lib/netstandard2.0/YoutubeExplode.xml",
+        "lib/netstandard2.1/YoutubeExplode.dll",
+        "lib/netstandard2.1/YoutubeExplode.xml",
+        "youtubeexplode.5.1.8.nupkg.sha512",
+        "youtubeexplode.nuspec"
       ]
     },
     "Livodyo/1.0.0": {

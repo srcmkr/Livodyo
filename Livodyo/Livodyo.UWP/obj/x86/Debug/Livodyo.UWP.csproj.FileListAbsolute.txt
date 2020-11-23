@@ -62,4 +62,4 @@ C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\obj\x86\Debug\Proj
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160679180000000.json
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\Newtonsoft.Json.dll
-C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\livodyo-logo.png
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\logo.png

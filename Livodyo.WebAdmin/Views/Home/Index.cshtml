@@ -28,7 +28,7 @@
 <div class="row">
     @foreach (var tag in Model.Tags)
     {
-        <div class="m-2 badge badge-info">@tag.Tag</div>
+        <div class="m-2 badge badge-info">@tag.Tag <a asp-action="DeleteTag" asp-route-tagId="@tag.Id">X</a></div>
     }
 </div>
 
@@ -47,7 +47,7 @@
             <div class="col-md-4 p-4 border-dark">
                 <small>@audiobook.Id</small><br />
                 <a href="https://www.youtube.com/watch?v=@audiobook.YoutubeId">
-                    <img height="25%" src="https://img.youtube.com/vi/@audiobook.YoutubeId/0.jpg"/>
+                    <img height="150" src="https://img.youtube.com/vi/@audiobook.YoutubeId/0.jpg"/>
                 </a><br />
                 <strong>@audiobook.Title</strong><br/>
                 @Model.Authors.SingleOrDefault(c => c.Id == audiobook.AuthorId)?.Name<br/>

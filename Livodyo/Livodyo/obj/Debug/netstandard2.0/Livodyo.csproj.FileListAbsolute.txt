@@ -12,3 +12,5 @@ C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\ref\Livodyo.dll
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\Livodyo.pdb
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\Livodyo.csprojAssemblyReference.cache
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\obj\Debug\netstandard2.0\Livodyo.csproj.CopyComplete

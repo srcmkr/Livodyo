@@ -61,6 +61,9 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\logo.png">
+      <PackagePath>logo.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\xamarin.forms\5.0.0.1558-pre3\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
@@ -171,9 +174,6 @@
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\livodyo-logo.png">
-      <PackagePath>livodyo-logo.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

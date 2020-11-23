@@ -3,5 +3,6 @@
   <PropertyGroup>
     <DefaultDevice>pixel_3a_xl_q_10_0_-_api_29</DefaultDevice>
     <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
+    <SelectedDevice>pixel_3a_xl_q_10_0_-_api_29</SelectedDevice>
   </PropertyGroup>
 </Project>

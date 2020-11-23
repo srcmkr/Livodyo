@@ -56,5 +56,11 @@ namespace Livodyo.WebAdmin.Controllers
             var debugReturn = await _http.DeleteAsync($"{Helpers.GetEnvironmentVariable("API")}/audiobooks/{audiobookId}");
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> DeleteTag(Guid tagId)
+        {
+            var debugReturn = await _http.DeleteAsync($"{Helpers.GetEnvironmentVariable("API")}/tags/{tagId}");
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

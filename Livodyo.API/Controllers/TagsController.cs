@@ -26,6 +26,17 @@ namespace Livodyo.API.Controllers
             return State.Tags.ToList();
         }
 
+        [HttpDelete("{tagId}")]
+        public bool DeleteTag(Guid tagId)
+        {
+            var toDel = State.Tags.SingleOrDefault(c => c.Id == tagId);
+            if (toDel == null) return false;
+
+            State.Tags.Remove(toDel);
+            State.SaveChanges();
+            return true;
+        }
+
         [HttpGet("{tagId}/{maxResults}")]
         [HttpGet("{tagId}")]
         public IEnumerable<AudioBookModel> GetAudioBooksByTag(Guid tagId, int maxResults = 9999)

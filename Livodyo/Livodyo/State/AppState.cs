@@ -14,6 +14,15 @@ namespace Livodyo.State
         public List<TagModel> Tags { get; set; }
         private HttpClient Client { get; set; }
 
+        // uncomment for productive using
+        public string ApiEndpoint = "http://hsh2brain.privacy.ltd:8080";
+
+        // uncomment use for android debugging
+        //public string ApiEndpoint = "https://10.0.2.2:6001";
+            
+        // uncomment for UWP debugging
+        //public string ApiEndpoint = "https://localhost:6001";
+
         public AppState()
         {
             var handler = new HttpClientHandler() 
@@ -38,24 +47,22 @@ namespace Livodyo.State
             }
             catch (Exception ex)
             {
-                Console.WriteLine("API Error", ex);
+                Console.WriteLine($"API Error: {ex}");
                 return default;
             }
-
         }
 
         public async Task SynchronizeAsync()
         {
-            const string apiEndpoint = "https://localhost:6001";
-            var audioBookEndpoint = $"{apiEndpoint}/audiobooks/";
-            var authorsEndpoint = $"{apiEndpoint}/authors/";
-            var tagsEndpoint = $"{apiEndpoint}/tags/";
+            // preparing links to api
+            var audioBookEndpoint = $"{ApiEndpoint}/audiobooks/";
+            var authorsEndpoint = $"{ApiEndpoint}/authors/";
+            var tagsEndpoint = $"{ApiEndpoint}/tags/";
 
+            // get/download every list of entitytype from api
             AudioBooks = await GetAsync<List<AudioBookModel>>(audioBookEndpoint);
             Authors = await GetAsync<List<AuthorModel>>(authorsEndpoint);
             Tags = await GetAsync<List<TagModel>>(tagsEndpoint);
         }
     }
 }
-
-// kbo2cHNdMeI

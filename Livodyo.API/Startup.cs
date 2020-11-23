@@ -44,6 +44,7 @@ namespace Livodyo.API
             //app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 

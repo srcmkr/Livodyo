@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-12T01:51:38.938</Modified>
+      <Modified>2020-11-23T02:41:24.840</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\Livodyo.UWP.exe">
       <PackagePath>entrypoint\Livodyo.UWP.exe</PackagePath>
-      <Modified>2020-11-12T01:35:22.210</Modified>
+      <Modified>2020-11-22T22:58:35.015</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -72,7 +72,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\bin\Debug\netstandard2.0\Livodyo.dll">
       <PackagePath>Livodyo.dll</PackagePath>
-      <Modified>2020-11-12T01:51:32.468</Modified>
+      <Modified>2020-11-23T02:41:22.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -81,6 +81,10 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T16:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\logo.png">
+      <PackagePath>logo.png</PackagePath>
+      <Modified>2020-11-22T16:22:43.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\xamarin.forms\5.0.0.1558-pre3\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
@@ -221,10 +225,6 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-10-24T16:22:55.910</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\livodyo-logo.png">
-      <PackagePath>livodyo-logo.png</PackagePath>
-      <Modified>2020-11-12T00:35:51.316</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2020-10-24T16:22:55.915</Modified>
@@ -235,11 +235,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-11-12T01:51:37.855</Modified>
+      <Modified>2020-11-23T02:39:06.516</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-11-12T01:51:37.855</Modified>
+      <Modified>2020-11-23T02:39:06.516</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -255,11 +255,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-11-12T01:01:33.495</Modified>
+      <Modified>2020-11-22T16:22:59.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\Core\Livodyo.UWP.exe">
       <PackagePath>Livodyo.UWP.exe</PackagePath>
-      <Modified>2020-11-12T01:51:38.934</Modified>
+      <Modified>2020-11-23T02:41:24.836</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,7 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+# Starting with .db-File routing: docker run -d -p 8080:80 -v /usr/share/livodyo/Livodyo.db:/app/Livodyo.db:Z srcmkr/livodyoapi:latest
+# Starting webadmin with: docker run -d -p 8081:80 -e API="http://hsh2brain.privacy.ltd:8080" srcmkr/livodyowebadmin:latest
+# Visit http://hsh2brain.privacy.ltd:8081 for admin
+# visit http://hsh2brain.privacy.ltd:8080 for HTTP/JSON API
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim AS base
 WORKDIR /app

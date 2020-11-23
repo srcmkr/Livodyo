@@ -3,9 +3,15 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Livodyo.Android.dll" comes first in this list. */
 		"Livodyo.Android.dll",
+		"AngleSharp.dll",
 		"FormsViewGroup.dll",
+		"LibVLCSharp.Android.AWindow.dll",
+		"LibVLCSharp.dll",
 		"Livodyo.dll",
+		"Microsoft.Bcl.AsyncInterfaces.dll",
 		"Newtonsoft.Json.dll",
+		"System.Text.Encodings.Web.dll",
+		"System.Text.Json.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.AppCompat.AppCompatResources.dll",
@@ -52,6 +58,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Android.Material.dll",
+		"YoutubeExplode.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

@@ -1,15 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "ZJ3CURCGGhplbBn/8X7tIJV0VcNDLVizQYmFVFl5/2Ll1D+9CsR6U4Qaj00XnW5BIAhN5e57mYMrT33R3XMf8Q==",
+  "dgSpecHash": "dxbQQPYPsBEq/cUBapTEjV+70ge1DMpLcXAkeWckbdJ10+v+teaI6cFbBIId/1rujJWJWPl8hP2gTbBZOxaiNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\sourcemaker\\source\\repos\\Livodyo\\Livodyo\\Livodyo\\Livodyo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\anglesharp\\0.14.0\\anglesharp.0.14.0.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\libvlcsharp\\3.4.9\\libvlcsharp.3.4.9.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\sourcemaker\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\sourcemaker\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\sourcemaker\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\sourcemaker\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\sourcemaker\\.nuget\\packages\\xamarin.essentials\\1.6.0-pre3\\xamarin.essentials.1.6.0-pre3.nupkg.sha512",
-    "C:\\Users\\sourcemaker\\.nuget\\packages\\xamarin.forms\\5.0.0.1558-pre3\\xamarin.forms.5.0.0.1558-pre3.nupkg.sha512"
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\system.text.encodings.web\\4.7.1\\system.text.encodings.web.4.7.1.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\xamarin.essentials\\1.6.0-pre4\\xamarin.essentials.1.6.0-pre4.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\xamarin.forms\\5.0.0.1709-pre4\\xamarin.forms.5.0.0.1709-pre4.nupkg.sha512",
+    "C:\\Users\\sourcemaker\\.nuget\\packages\\youtubeexplode\\5.1.8\\youtubeexplode.5.1.8.nupkg.sha512"
   ],
   "logs": []
 }
