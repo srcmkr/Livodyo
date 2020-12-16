@@ -361,3 +361,6 @@ C:\Users\sourcemaker\source\repos\Livodyo\Livodyo.WebAdmin\obj\Debug\net5.0\ref\
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo.WebAdmin\obj\Debug\net5.0\Livodyo.WebAdmin.pdb
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo.WebAdmin\obj\Debug\net5.0\Livodyo.WebAdmin.genruntimeconfig.cache
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo.WebAdmin\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo.WebAdmin\bin\Debug\net5.0\AngleSharp.dll
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo.WebAdmin\bin\Debug\net5.0\LibVLCSharp.dll
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo.WebAdmin\bin\Debug\net5.0\YoutubeExplode.dll

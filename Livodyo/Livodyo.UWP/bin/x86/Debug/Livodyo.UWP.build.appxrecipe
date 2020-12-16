@@ -28,11 +28,38 @@
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\Livodyo.UWP.exe">
       <PackagePath>entrypoint\Livodyo.UWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\anglesharp\0.14.0\lib\netstandard2.0\AngleSharp.dll">
+      <PackagePath>AngleSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\libvlcsharp\3.4.9\lib\uap10.0.16299\LibVLCSharp.dll">
+      <PackagePath>LibVLCSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\microsoft.bcl.asyncinterfaces\1.1.1\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
+      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\sharpdx\4.2.0\lib\uap10.0\SharpDX.dll">
+      <PackagePath>SharpDX.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\sharpdx.direct3d11\4.2.0\lib\uap10.0\SharpDX.Direct3D11.dll">
+      <PackagePath>SharpDX.Direct3D11.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\sharpdx.dxgi\4.2.0\lib\uap10.0\SharpDX.DXGI.dll">
+      <PackagePath>SharpDX.DXGI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\system.runtime.compilerservices.unsafe\4.7.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\system.text.encodings.web\4.7.1\lib\netstandard2.0\System.Text.Encodings.Web.dll">
+      <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\system.text.json\4.7.2\lib\netstandard2.0\System.Text.Json.dll">
+      <PackagePath>System.Text.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -52,6 +79,9 @@
     <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\xamarin.forms\5.0.0.1558-pre3\lib\uap10.0.16299\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\youtubeexplode\5.1.8\lib\netstandard2.0\YoutubeExplode.dll">
+      <PackagePath>YoutubeExplode.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo\bin\Debug\netstandard2.0\Livodyo.dll">
       <PackagePath>Livodyo.dll</PackagePath>
     </AppxPackagedFile>
@@ -63,6 +93,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\logo.png">
       <PackagePath>logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\libvlcsharp\3.4.9\lib\uap10.0.16299\LibVLCSharp\LibVLCSharp.xr.xml">
+      <PackagePath>LibVLCSharp\LibVLCSharp.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sourcemaker\.nuget\packages\xamarin.forms\5.0.0.1558-pre3\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>

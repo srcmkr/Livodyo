@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using LiteDB;
 using Livodyo.Models;
 using Newtonsoft.Json;
 
@@ -12,6 +15,9 @@ namespace Livodyo.State
         public List<AudioBookModel> AudioBooks { get; set; }
         public List<AuthorModel> Authors { get; set; }
         public List<TagModel> Tags { get; set; }
+
+        public List<AudioBookModel> DownloadedAudioBooks { get; set; }
+
         private HttpClient Client { get; set; }
 
         // uncomment for productive using
@@ -52,6 +58,17 @@ namespace Livodyo.State
             }
         }
 
+        public void Save()
+        {
+            var dbFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "livodio.db");
+            using (var db = new LiteDatabase(dbFile))
+            {
+                var col = db.GetCollection<AudioBookModel>("audiobooks");
+                col.DeleteAll();
+                col.InsertBulk(DownloadedAudioBooks);
+            }
+        }
+
         public async Task SynchronizeAsync()
         {
             // preparing links to api
@@ -63,6 +80,13 @@ namespace Livodyo.State
             AudioBooks = await GetAsync<List<AudioBookModel>>(audioBookEndpoint);
             Authors = await GetAsync<List<AuthorModel>>(authorsEndpoint);
             Tags = await GetAsync<List<TagModel>>(tagsEndpoint);
+
+            var dbFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "livodio.db");
+            using (var db = new LiteDatabase(dbFile))
+            {
+                var col = db.GetCollection<AudioBookModel>("audiobooks");
+                DownloadedAudioBooks = col.FindAll().ToList();
+            }
         }
     }
 }

@@ -45,7 +45,7 @@ namespace Livodyo
 
             if (_appState.AudioBooks != null)
             {
-                foreach (var top10Audiobook in _appState.AudioBooks.Where(c => c.Tags.Contains(tag.Id)).Take(10))
+                foreach (var top10Audiobook in _appState.AudioBooks.Where(c => c.Tags.Contains(tag.Id)).Take(20))
                 {
                     topScrollerLayout.Children.Add(GetLargeAudioBook(top10Audiobook, 80,80));
                 }
@@ -61,7 +61,7 @@ namespace Livodyo
                 CornerRadius = 8,
                 BackgroundColor = Color.FromHex("1b1b1d"),
                 Content = mainStackLayout,
-                HeightRequest = 100,
+                HeightRequest = 150,
                 WidthRequest = Width + 10,
                 MinimumWidthRequest = Width + 10
             };
@@ -132,10 +132,24 @@ namespace Livodyo
                 BackgroundColor = Color.FromHex("191514"),
             };
 
+            // goto download library
+            var libButton = new Button
+            {
+                Text = "Meine Bibliothek öffnen",
+                BackgroundColor = Color.FromHex("#191514"),
+                TextColor = Color.FromHex("#d8e8e7"),
+                FontSize = 12
+            };
+
+            libButton.Clicked += async (x, y) =>
+            {
+                await Navigation.PushModalAsync(new LibraryPage(_appState));
+            };
+
             // upper logo bar
             var logoLayout = new StackLayout
             {
-                HeightRequest = 150,
+                HeightRequest = 200,
                 Orientation = StackOrientation.Vertical,
                 BackgroundColor = Color.FromHex("1b191c"),
                 Children =
@@ -147,7 +161,8 @@ namespace Livodyo
                         Aspect = Aspect.AspectFit,
                         HorizontalOptions = LayoutOptions.CenterAndExpand,
                         VerticalOptions = LayoutOptions.CenterAndExpand,
-                    }
+                    },
+                    libButton
                 }
             };
             mainLayout.Children.Add(logoLayout);
@@ -179,7 +194,7 @@ namespace Livodyo
             // adding for (randomized) three tags a list of max 10 audiobooks
             if (_appState.AudioBooks != null)
             {
-                foreach (var randomTag in _appState.Tags.OrderBy(c => Guid.NewGuid()).Take(3))
+                foreach (var randomTag in _appState.Tags)
                 {
                     mainLayout.Children.Add(GetTagSection(randomTag));
                 }

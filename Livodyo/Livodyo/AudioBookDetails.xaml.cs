@@ -56,8 +56,8 @@ namespace Livodyo
                 await youtube.Videos.Streams.GetAsync(streamInfo);
                 var dlFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), $"{AudioBookId}.mp3");
                 
-                button.Text = "Downloading...";
-                await youtube.Videos.Streams.DownloadAsync(streamInfo, dlFile);
+                button.Text = "Herunterladen...";
+                await youtube.Videos.Streams.DownloadAsync(streamInfo, dlFile, new Progress<double>(p => button.Text = $"Download: {p:P1}"));
                 button.Text = "Abgeschlossen";
                 return true;
             }
@@ -96,6 +96,7 @@ namespace Livodyo
                 Padding = new Thickness(20),
                 HorizontalOptions = LayoutOptions.CenterAndExpand
             };
+
             detailsStackLayout.Children.Add(
                 new Label
                 {
@@ -119,14 +120,63 @@ namespace Livodyo
                 Padding = new Thickness(6),
                 Margin = new Thickness(0,25,0,0)
             };
+
+            // adding invisible my library button
+            var libButton = new Button
+            {
+                Text = "Zur Bibliothek",
+                WidthRequest = 250,
+                MinimumWidthRequest = 250,
+                BackgroundColor = Color.Red,
+                TextColor = Color.White,
+                HorizontalOptions = LayoutOptions.Center,
+                CornerRadius = 6,
+                Padding = new Thickness(6),
+                Margin = new Thickness(0,25,0,0),
+            };
+
+            // add download button action event
             button.Clicked += async (x, y) =>
             {
                 button.Text = "Initialisierung...";
                 button.IsEnabled = false;
                 var wasSuccessful = await DownloadAudioBook(button);
                 if (wasSuccessful)
-                    button.Text = "Heruntergeladen!";
+                {
+                    // switch visibility for download & library button
+                    libButton.IsVisible = true;
+                    button.IsVisible = false;
+                    // insert currentAudioBooks into AppState and save to local storage
+                    AppState.DownloadedAudioBooks.Add(currentAudioBook);
+                    AppState.Save();
+                } else
+                {
+                    // An (unknown) error occured
+                    button.Text = "Fehler";
+                    libButton.IsVisible = false;
+                    button.IsVisible = true;
+                }
             };
+
+            // add library button action event
+            libButton.Clicked += async (x, y) =>
+            {
+                await Navigation.PushModalAsync(new LibraryPage(AppState));
+            };
+
+            // lets see if we already have this audiobook locally
+            if (AppState.DownloadedAudioBooks.Any(c => c.Id == AudioBookId))
+            {
+                libButton.IsVisible = true;
+                button.IsVisible = false;
+            } else
+            {
+                libButton.IsVisible = false;
+                button.IsVisible = true;
+            }
+
+            // add both buttons to stacklayout
+            detailsStackLayout.Children.Add(libButton);
             detailsStackLayout.Children.Add(button);
 
             // add tags and display meta data to details page

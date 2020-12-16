@@ -26,6 +26,15 @@
           "lib/netstandard2.0/LibVLCSharp.dll": {}
         }
       },
+      "LiteDB/5.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/LiteDB.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/LiteDB.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -69,6 +78,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.MediaManager/1.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediaManager.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediaManager.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -172,7 +190,7 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "Xamarin.Essentials/1.6.0-pre4": {
+      "Xamarin.Essentials/1.6.0-rc1": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -184,7 +202,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.1709-pre4": {
+      "Xamarin.Forms/5.0.0.1791-pre5": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -201,7 +219,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "YoutubeExplode/5.1.8": {
+      "YoutubeExplode/5.1.9": {
         "type": "package",
         "dependencies": {
           "AngleSharp": "0.14.0",
@@ -277,6 +295,26 @@
         "lib/xamarintvos10/LibVLCSharp.xml",
         "libvlcsharp.3.4.9.nupkg.sha512",
         "libvlcsharp.nuspec"
+      ]
+    },
+    "LiteDB/5.0.9": {
+      "sha512": "cWnNWXL+qaP/qrkUCYZHBUJcv+IsfJfofa+Ed4EyT0zs/gkXqfKvjTbS3uSMBfcd9I7Yf+q9YPmCpmVFrVGQtw==",
+      "type": "package",
+      "path": "litedb/5.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AppVeyorSettings.json",
+        "LICENSE",
+        "icon_64x64.png",
+        "lib/net45/LiteDB.dll",
+        "lib/net45/LiteDB.xml",
+        "lib/netstandard1.3/LiteDB.dll",
+        "lib/netstandard1.3/LiteDB.xml",
+        "lib/netstandard2.0/LiteDB.dll",
+        "lib/netstandard2.0/LiteDB.xml",
+        "litedb.5.0.9.nupkg.sha512",
+        "litedb.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -477,6 +515,49 @@
         "newtonsoft.json.12.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "Plugin.MediaManager/1.0.7": {
+      "sha512": "LI58iDBLjEcJOeSqHdFcYRWqko/Gclk4CLp/ZFv9vezRpQViHyd4PmQBx3cLFKytC3Qi4xxdZmgvzUmnFO0QYA==",
+      "type": "package",
+      "path": "plugin.mediamanager/1.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/monoandroid10.0/MediaManager.dll",
+        "lib/monoandroid10.0/MediaManager.pdb",
+        "lib/monoandroid10.0/MediaManager.xml",
+        "lib/net472/MediaManager.dll",
+        "lib/net472/MediaManager.pdb",
+        "lib/net472/MediaManager.xml",
+        "lib/netcoreapp3.1/MediaManager.dll",
+        "lib/netcoreapp3.1/MediaManager.pdb",
+        "lib/netcoreapp3.1/MediaManager.xml",
+        "lib/netstandard2.0/MediaManager.dll",
+        "lib/netstandard2.0/MediaManager.pdb",
+        "lib/netstandard2.0/MediaManager.xml",
+        "lib/tizen40/MediaManager.dll",
+        "lib/tizen40/MediaManager.pdb",
+        "lib/tizen40/MediaManager.xml",
+        "lib/uap10.0.17763/MediaManager.dll",
+        "lib/uap10.0.17763/MediaManager.pdb",
+        "lib/uap10.0.17763/MediaManager.pri",
+        "lib/uap10.0.17763/MediaManager.xml",
+        "lib/uap10.0.17763/MediaManager/MediaManager.xr.xml",
+        "lib/xamarinios10/MediaManager.dll",
+        "lib/xamarinios10/MediaManager.pdb",
+        "lib/xamarinios10/MediaManager.xml",
+        "lib/xamarinmac20/MediaManager.dll",
+        "lib/xamarinmac20/MediaManager.pdb",
+        "lib/xamarinmac20/MediaManager.xml",
+        "lib/xamarintvos10/MediaManager.dll",
+        "lib/xamarintvos10/MediaManager.pdb",
+        "lib/xamarintvos10/MediaManager.xml",
+        "plugin.mediamanager.1.0.7.nupkg.sha512",
+        "plugin.mediamanager.nuspec",
+        "readme.txt"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -741,10 +822,10 @@
         "version.txt"
       ]
     },
-    "Xamarin.Essentials/1.6.0-pre4": {
-      "sha512": "I8aI9wUOsKKMgeeRUX2wT4PBX74ozBLseC/s+o/w2QXGf+T5OjYI47ZESGZD39zWwqVF2ASGlwrYN4lV2UALzQ==",
+    "Xamarin.Essentials/1.6.0-rc1": {
+      "sha512": "PBc8xbb/8PJpV/cCgBbgUui8m79uk1KvY0trT14hRSb2OwApDbjl0koVDkyzdPMp3azLb35F+i6fLOEX7hMyDw==",
       "type": "package",
-      "path": "xamarin.essentials/1.6.0-pre4",
+      "path": "xamarin.essentials/1.6.0-rc1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -788,14 +869,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.6.0-pre4.nupkg.sha512",
+        "xamarin.essentials.1.6.0-rc1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.1709-pre4": {
-      "sha512": "4dIJ7Vs0SJl92vglE2/UkCL5FDDMYPx7ezyfz/3xUqZmNbzz74cpKeEcuy7eW43u/nfDxEX+nyxRwL4+dzHmQg==",
+    "Xamarin.Forms/5.0.0.1791-pre5": {
+      "sha512": "1GKg/cTAFaLRSRcdxld0BxuDoisitHiVEltmgIxIPa/mgyZ1OoKpnJSpV33vz6+Ab0p7u65b51743ZTAvHQW9g==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.1709-pre4",
+      "path": "xamarin.forms/5.0.0.1791-pre5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1004,14 +1085,14 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.1709-pre4.nupkg.sha512",
+        "xamarin.forms.5.0.0.1791-pre5.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "YoutubeExplode/5.1.8": {
-      "sha512": "1g7ruwKLaUJCoJ/zl731rybVfR+FrPohNNYG+YTZtBymBihDp4KpAHCRt8PXnXIJAGb+yBwJG1wZMsxCbbvG9g==",
+    "YoutubeExplode/5.1.9": {
+      "sha512": "Ksn+c4LbsKKvEe3EKD7Z+pEJKjWruTTywhDWWc5tYRJ/C0MUNW5Ot5YhCgM6aiyKzNI/ADX4R4xsgqhkl8IUUA==",
       "type": "package",
-      "path": "youtubeexplode/5.1.8",
+      "path": "youtubeexplode/5.1.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1024,7 +1105,7 @@
         "lib/netstandard2.0/YoutubeExplode.xml",
         "lib/netstandard2.1/YoutubeExplode.dll",
         "lib/netstandard2.1/YoutubeExplode.xml",
-        "youtubeexplode.5.1.8.nupkg.sha512",
+        "youtubeexplode.5.1.9.nupkg.sha512",
         "youtubeexplode.nuspec"
       ]
     }
@@ -1032,11 +1113,13 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "LibVLCSharp >= 3.4.9",
+      "LiteDB >= 5.0.9",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.3",
-      "Xamarin.Essentials >= 1.6.0-pre4",
-      "Xamarin.Forms >= 5.0.0.1709-pre4",
-      "YoutubeExplode >= 5.1.8"
+      "Plugin.MediaManager >= 1.0.7",
+      "Xamarin.Essentials >= 1.6.0-rc1",
+      "Xamarin.Forms >= 5.0.0.1791-pre5",
+      "YoutubeExplode >= 5.1.9"
     ]
   },
   "packageFolders": {
@@ -1090,6 +1173,10 @@
             "target": "Package",
             "version": "[3.4.9, )"
           },
+          "LiteDB": {
+            "target": "Package",
+            "version": "[5.0.9, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
@@ -1100,17 +1187,21 @@
             "target": "Package",
             "version": "[12.0.3, )"
           },
+          "Plugin.MediaManager": {
+            "target": "Package",
+            "version": "[1.0.7, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.6.0-pre4, )"
+            "version": "[1.6.0-rc1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[5.0.0.1709-pre4, )"
+            "version": "[5.0.0.1791-pre5, )"
           },
           "YoutubeExplode": {
             "target": "Package",
-            "version": "[5.1.8, )"
+            "version": "[5.1.9, )"
           }
         },
         "imports": [
@@ -1123,7 +1214,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20601.7\\RuntimeIdentifierGraph.json"
       }
     }
   }

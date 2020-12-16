@@ -248,7 +248,7 @@
           "System.Resources.Reader": "5.0.0.0",
           "System.Resources.ResourceManager": "5.0.0.0",
           "System.Resources.Writer": "5.0.0.0",
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0.0",
+          "System.Runtime.CompilerServices.Unsafe.Reference": "5.0.0.0",
           "System.Runtime.CompilerServices.VisualC": "5.0.0.0",
           "System.Runtime": "5.0.0.0",
           "System.Runtime.Extensions": "5.0.0.0",
@@ -279,7 +279,7 @@
           "System.Security.SecureString": "5.0.0.0",
           "System.ServiceModel.Web": "4.0.0.0",
           "System.ServiceProcess": "4.0.0.0",
-          "System.Text.Encoding.CodePages": "5.0.0.0",
+          "System.Text.Encoding.CodePages.Reference": "5.0.0.0",
           "System.Text.Encoding": "5.0.0.0",
           "System.Text.Encoding.Extensions": "5.0.0.0",
           "System.Text.Encodings.Web": "5.0.0.0",
@@ -320,6 +320,31 @@
           "Livodyo.API.dll": {}
         }
       },
+      "AngleSharp/0.14.0": {
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AngleSharp.dll": {
+            "assemblyVersion": "0.14.0.0",
+            "fileVersion": "0.14.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AngleSharp.dll": {}
+        }
+      },
+      "LibVLCSharp/3.4.9": {
+        "runtime": {
+          "lib/netstandard2.1/LibVLCSharp.dll": {
+            "assemblyVersion": "3.4.9.0",
+            "fileVersion": "3.4.9.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/LibVLCSharp.dll": {}
+        }
+      },
       "LiteDB/5.0.9": {
         "runtime": {
           "lib/netstandard2.0/LiteDB.dll": {
@@ -332,6 +357,7 @@
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
+      "Microsoft.NETCore.Platforms/2.0.0": {},
       "Microsoft.OpenApi/1.2.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -403,7 +429,14 @@
         }
       },
       "System.Numerics.Vectors/4.5.0": {},
-      "Xamarin.Essentials/1.6.0-pre3": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {},
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        }
+      },
+      "Xamarin.Essentials/1.6.0-pre4": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -417,19 +450,19 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.1558-pre3": {
+      "Xamarin.Forms/5.0.0.1709-pre4": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.344"
+            "fileVersion": "5.0.0.455"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.344"
+            "fileVersion": "5.0.0.455"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.344"
+            "fileVersion": "5.0.0.455"
           }
         },
         "compile": {
@@ -438,11 +471,27 @@
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
         }
       },
+      "YoutubeExplode/5.1.8": {
+        "dependencies": {
+          "AngleSharp": "0.14.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/YoutubeExplode.dll": {
+            "assemblyVersion": "5.1.8.0",
+            "fileVersion": "5.1.8.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/YoutubeExplode.dll": {}
+        }
+      },
       "Livodyo/1.0.0": {
         "dependencies": {
+          "LibVLCSharp": "3.4.9",
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.6.0-pre3",
-          "Xamarin.Forms": "5.0.0.1558-pre3"
+          "Xamarin.Essentials": "1.6.0-pre4",
+          "Xamarin.Forms": "5.0.0.1709-pre4",
+          "YoutubeExplode": "5.1.8"
         },
         "runtime": {
           "Livodyo.dll": {}
@@ -1765,7 +1814,7 @@
         },
         "compileOnly": true
       },
-      "System.Runtime.CompilerServices.Unsafe/5.0.0.0": {
+      "System.Runtime.CompilerServices.Unsafe.Reference/5.0.0.0": {
         "compile": {
           "System.Runtime.CompilerServices.Unsafe.dll": {}
         },
@@ -1951,7 +2000,7 @@
         },
         "compileOnly": true
       },
-      "System.Text.Encoding.CodePages/5.0.0.0": {
+      "System.Text.Encoding.CodePages.Reference/5.0.0.0": {
         "compile": {
           "System.Text.Encoding.CodePages.dll": {}
         },
@@ -2157,6 +2206,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AngleSharp/0.14.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-34w9I7nyszfEYBY8g7T3B0AtWlOivNh+QoWc3KECRwbmcNyqWmb4huihtmpH2Ds7rIRRHMMPv9yfPBxxjBn03g==",
+      "path": "anglesharp/0.14.0",
+      "hashPath": "anglesharp.0.14.0.nupkg.sha512"
+    },
+    "LibVLCSharp/3.4.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hfivX2fKk2AKaKOkqeTBlqNL6YKJAFK4AwoQPJkhArDch2cg194nhuy6esWUFs7N/xTY/z1sbdy35lceCAetbg==",
+      "path": "libvlcsharp/3.4.9",
+      "hashPath": "libvlcsharp.3.4.9.nupkg.sha512"
+    },
     "LiteDB/5.0.9": {
       "type": "package",
       "serviceable": true,
@@ -2170,6 +2233,13 @@
       "sha512": "sha512-LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
       "path": "microsoft.extensions.apidescription.server/3.0.0",
       "hashPath": "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "path": "microsoft.netcore.platforms/2.0.0",
+      "hashPath": "microsoft.netcore.platforms.2.0.0.nupkg.sha512"
     },
     "Microsoft.OpenApi/1.2.3": {
       "type": "package",
@@ -2227,19 +2297,40 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.6.0-pre3": {
+    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1ivhLILsK5Nm4hqGEFyTXBxgwdG0QGnvWpINS2tdicYWWi3hFCgmVSqak3EfEtzzz+dETEPiDdsMPiwU9F/tyg==",
-      "path": "xamarin.essentials/1.6.0-pre3",
-      "hashPath": "xamarin.essentials.1.6.0-pre3.nupkg.sha512"
+      "sha512": "sha512-YrzNWduCDHhUaSRBxHxL11UkM2fD6y8hITHis4/LbQZ6vj3vdRjoH3IoPWWC9uDXK2wHIqn+b5gv1Np/VKyM1g==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
     },
-    "Xamarin.Forms/5.0.0.1558-pre3": {
+    "System.Text.Encoding.CodePages/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fSya3s/aslIi71GzT5+AyJ1WAVPgXdbF76/5q2pUl+e8VdZc7cqaO+/Hf6Xm9VlPBG5npf8tLkSspNnFwN54+g==",
-      "path": "xamarin.forms/5.0.0.1558-pre3",
-      "hashPath": "xamarin.forms.5.0.0.1558-pre3.nupkg.sha512"
+      "sha512": "sha512-S0wEUiKcLvRlkFUXca8uio1UQ5bYQzYgOmOKtCqaBQC3GR9AJjh43otcM32IGsAyvadFTaAMw9Irm6dS4Evfng==",
+      "path": "system.text.encoding.codepages/4.5.0",
+      "hashPath": "system.text.encoding.codepages.4.5.0.nupkg.sha512"
+    },
+    "Xamarin.Essentials/1.6.0-pre4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I8aI9wUOsKKMgeeRUX2wT4PBX74ozBLseC/s+o/w2QXGf+T5OjYI47ZESGZD39zWwqVF2ASGlwrYN4lV2UALzQ==",
+      "path": "xamarin.essentials/1.6.0-pre4",
+      "hashPath": "xamarin.essentials.1.6.0-pre4.nupkg.sha512"
+    },
+    "Xamarin.Forms/5.0.0.1709-pre4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4dIJ7Vs0SJl92vglE2/UkCL5FDDMYPx7ezyfz/3xUqZmNbzz74cpKeEcuy7eW43u/nfDxEX+nyxRwL4+dzHmQg==",
+      "path": "xamarin.forms/5.0.0.1709-pre4",
+      "hashPath": "xamarin.forms.5.0.0.1709-pre4.nupkg.sha512"
+    },
+    "YoutubeExplode/5.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1g7ruwKLaUJCoJ/zl731rybVfR+FrPohNNYG+YTZtBymBihDp4KpAHCRt8PXnXIJAGb+yBwJG1wZMsxCbbvG9g==",
+      "path": "youtubeexplode/5.1.8",
+      "hashPath": "youtubeexplode.5.1.8.nupkg.sha512"
     },
     "Livodyo/1.0.0": {
       "type": "project",
@@ -3341,7 +3432,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Runtime.CompilerServices.Unsafe/5.0.0.0": {
+    "System.Runtime.CompilerServices.Unsafe.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -3496,7 +3587,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Text.Encoding.CodePages/5.0.0.0": {
+    "System.Text.Encoding.CodePages.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
