@@ -20,6 +20,8 @@ namespace Livodyo.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             CrossMediaManager.Current.Init(this);
 
+            Window.SetStatusBarColor(Android.Graphics.Color.Argb(255, 28, 20, 28));
+
             LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
