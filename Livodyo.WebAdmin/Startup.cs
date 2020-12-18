@@ -1,13 +1,8 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+/// <summary>
+/// Pair programming session 1 (12.11.2020)
+/// Authors: Deniz Ulu, Benjamin Bolzmann
+/// BIS-268 Mobile Computing, WiSe 2020/21, Merz
+/// </summary>
 
 namespace Livodyo.WebAdmin
 {

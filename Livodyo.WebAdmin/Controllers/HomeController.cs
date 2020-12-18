@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Net.Http.Json;
-using System.Threading.Tasks;
-using Livodyo.Models;
+﻿/// <summary>
+/// Pair programming session 1 (12.11.2020)
+/// Authors: Deniz Ulu, Benjamin Bolzmann
+/// BIS-268 Mobile Computing, WiSe 2020/21, Merz
+/// </summary>
+
 using Livodyo.WebAdmin.Lib;
 using Livodyo.WebAdmin.Models;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Livodyo.WebAdmin.Controllers
 {

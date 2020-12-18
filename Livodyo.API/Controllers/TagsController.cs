@@ -1,4 +1,10 @@
-﻿using Livodyo.API.Services;
+﻿/// <summary>
+/// Pair programming session 1 (12.11.2020)
+/// Authors: Deniz Ulu, Benjamin Bolzmann
+/// BIS-268 Mobile Computing, WiSe 2020/21, Merz
+/// </summary>
+
+using Livodyo.API.Services;
 
 namespace Livodyo.API.Controllers
 {

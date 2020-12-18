@@ -1,4 +1,10 @@
-﻿using Livodyo.Models;
+﻿/// <summary>
+/// Pair programming session 3 (16.12.2020)
+/// Authors: Deniz Ulu, Benjamin Bolzmann
+/// BIS-268 Mobile Computing, WiSe 2020/21, Merz
+/// </summary>
+
+using Livodyo.Models;
 using Livodyo.State;
 using MediaManager;
 using System;
