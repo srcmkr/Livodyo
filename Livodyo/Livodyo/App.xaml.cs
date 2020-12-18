@@ -1,5 +1,4 @@
-﻿using System.Net.Http;
-using Livodyo.State;
+﻿using Livodyo.State;
 using Xamarin.Forms;
 
 namespace Livodyo

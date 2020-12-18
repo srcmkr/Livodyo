@@ -60,7 +60,7 @@ namespace Livodyo.State
 
         public void Save()
         {
-            var dbFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "livodio.db");
+            var dbFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "livodyo.db");
             using (var db = new LiteDatabase(dbFile))
             {
                 var col = db.GetCollection<AudioBookModel>("audiobooks");
@@ -81,7 +81,7 @@ namespace Livodyo.State
             Authors = await GetAsync<List<AuthorModel>>(authorsEndpoint);
             Tags = await GetAsync<List<TagModel>>(tagsEndpoint);
 
-            var dbFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "livodio.db");
+            var dbFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "livodyo.db");
             using (var db = new LiteDatabase(dbFile))
             {
                 var col = db.GetCollection<AudioBookModel>("audiobooks");

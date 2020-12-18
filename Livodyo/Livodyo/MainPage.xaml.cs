@@ -59,7 +59,7 @@ namespace Livodyo
             {
                 HasShadow = true,
                 CornerRadius = 8,
-                BackgroundColor = Color.FromHex("1b1b1d"),
+                BackgroundColor = Color.FromHex("191514"),
                 Content = mainStackLayout,
                 HeightRequest = 150,
                 WidthRequest = Width + 10,
@@ -138,7 +138,7 @@ namespace Livodyo
                 Text = "Meine Bibliothek öffnen",
                 BackgroundColor = Color.FromHex("#191514"),
                 TextColor = Color.FromHex("#d8e8e7"),
-                FontSize = 12
+                FontSize = 16
             };
 
             libButton.Clicked += async (x, y) =>

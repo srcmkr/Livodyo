@@ -31,14 +31,7 @@ namespace Livodyo
         private async Task<bool> DownloadAudioBook(Button button)
         {
             // get audiobook from state
-            var currentAudioBook = AppState.AudioBooks.SingleOrDefault(c => c.Id == AudioBookId);
-
-            // not found? emergency exit
-            if (currentAudioBook == null)
-            {
-                await Navigation.PopAsync();
-                return false;
-            }
+            var currentAudioBook = AppState.AudioBooks.Single(c => c.Id == AudioBookId);
 
             // usage of YoutubeClient (external Nuget package)
             var youtube = new YoutubeClient();
@@ -68,14 +61,7 @@ namespace Livodyo
         public void BuildLayout()
         {
             // get full audiobook entity
-            var currentAudioBook = AppState.AudioBooks.SingleOrDefault(c => c.Id == AudioBookId);
-
-            // emergency exit if not found in state
-            if (currentAudioBook == null)
-            {
-                Navigation.PopAsync();
-                return;
-            }
+            var currentAudioBook = AppState.AudioBooks.Single(c => c.Id == AudioBookId);
 
             // add main layout
             var mainLayout = new StackLayout { BackgroundColor = Color.FromHex("191514") };

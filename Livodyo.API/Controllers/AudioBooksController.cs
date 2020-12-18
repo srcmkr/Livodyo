@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using Livodyo.API.Services;
-using Livodyo.Models;
-using System.Linq;
-using System;
+﻿using Livodyo.API.Services;
 
 namespace Livodyo.API.Controllers
 {

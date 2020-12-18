@@ -1,11 +1,9 @@
-﻿using LibVLCSharp.Shared;
-using Livodyo.Models;
+﻿using Livodyo.Models;
 using Livodyo.State;
 using MediaManager;
 using System;
 using System.IO;
 using System.Linq;
-using Windows.UI;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -123,10 +121,12 @@ namespace Livodyo
                 VerticalTextAlignment = TextAlignment.Center
             });
 
+            var author = AppState.Authors?.SingleOrDefault(c => c.Id == audioBook.AuthorId);
+            var authorName = (author == null) ? "" : author.Name;
             // the audiobook author
             innerStackLayout.Children.Add(new Label
             {
-                Text = AppState.Authors.Single(c => c.Id == audioBook.AuthorId).Name,
+                Text = authorName,
                 TextColor = Color.FromHex("#ebd132"),
                 HorizontalTextAlignment = TextAlignment.End,
                 VerticalTextAlignment = TextAlignment.Center
