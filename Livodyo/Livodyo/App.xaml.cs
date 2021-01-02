@@ -16,7 +16,11 @@ namespace Livodyo
             var appState = new AppState();
             InitializeComponent();
 
-            MainPage = new MainPage(appState);
+            MainPage = new NavigationPage(new MainPage(appState))
+            {
+                BarBackgroundColor = Color.FromHex("1b191c"),
+                BarTextColor = Color.White
+            };
         }
 
         protected override void OnStart()

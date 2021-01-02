@@ -69,6 +69,8 @@ namespace Livodyo
             // get full audiobook entity
             var currentAudioBook = AppState.AudioBooks.Single(c => c.Id == AudioBookId);
 
+            Title = currentAudioBook.Title;
+
             // add main layout
             var mainLayout = new StackLayout { BackgroundColor = Color.FromHex("191514") };
             
@@ -153,7 +155,7 @@ namespace Livodyo
             // add library button action event
             libButton.Clicked += async (x, y) =>
             {
-                await Navigation.PushModalAsync(new LibraryPage(AppState));
+                await Navigation.PushAsync(new LibraryPage(AppState));
             };
 
             // lets see if we already have this audiobook locally

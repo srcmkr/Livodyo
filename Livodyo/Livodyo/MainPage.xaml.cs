@@ -22,6 +22,8 @@ namespace Livodyo
             // add app state & make available for object
             _appState = appState;
 
+            Title = "Aktuelle Hörbücher";
+
             // create layout
             InitializeComponent();
             BuildLayout();
@@ -123,7 +125,7 @@ namespace Livodyo
         private async Task OpenDetails(Guid audioBookId)
         {
             var newPage = new AudioBookDetails(_appState, audioBookId);
-            await Navigation.PushModalAsync(newPage);
+            await Navigation.PushAsync(newPage);
         }
 
         // outsourced function for constructor to build view layout
@@ -149,7 +151,7 @@ namespace Livodyo
 
             libButton.Clicked += async (x, y) =>
             {
-                await Navigation.PushModalAsync(new LibraryPage(_appState));
+                await Navigation.PushAsync(new LibraryPage(_appState));
             };
 
             // upper logo bar

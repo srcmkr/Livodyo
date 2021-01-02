@@ -84,3 +84,8 @@ C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\obj\x86\Debug\Shar
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\obj\x86\Debug\FxResources.System.Text.Json.SR.resw
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\obj\x86\Debug\resources.en-us.resfiles
 C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\obj\x86\Debug\resources.en-us.resfiles.intermediate
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\MediaManager\MediaManager.xr.xml
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\LiteDB.dll
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\MediaManager.dll
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\bin\x86\Debug\MediaManager.pdb
+C:\Users\sourcemaker\source\repos\Livodyo\Livodyo\Livodyo.UWP\obj\x86\Debug\MediaManager.pri.xml

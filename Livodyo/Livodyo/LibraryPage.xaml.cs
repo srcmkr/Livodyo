@@ -25,6 +25,8 @@ namespace Livodyo
             AppState = appState;
             InitializeComponent();
 
+            Title = "Meine Bibliothek";
+
             // generate view
             BuildLayout();
         }
